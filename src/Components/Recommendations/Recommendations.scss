@@ -1,0 +1,248 @@
+@import "../../Scss/Variables.scss";
+
+.recommendations {
+  background-color: $darkBlue;
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100vw;
+    padding: 0;
+  }
+}
+
+.recommendations__info {
+  max-width: 720px;
+  padding: 48px;
+}
+
+.recommendations__heading {
+  margin: 0;
+  margin-bottom: 50px;
+  font-size: 44px;
+  line-height: 53px;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 150px;
+    height: 2px;
+    margin-top: 16px;
+    background-color: $green;
+  }
+}
+
+.recommendations__description {
+  margin: 0;
+  margin-bottom: 46px;
+  font-size: 22px;
+  line-height: 33px;
+}
+
+@media only screen and(max-width: 1440px) {
+  .recommendations__image {
+    max-width: 650px;
+    width: 100%;
+    height: auto;
+  }
+
+  .recommendations__info {
+    max-width: 650px;
+    width: 100%;
+  }
+}
+
+@media only screen and(max-width: 1300px) {
+  .recommendations__image {
+    max-width: 600px;
+  }
+
+  .recommendations__info {
+    max-width: 600px;
+  }
+}
+
+@media only screen and(max-width: 1210px) {
+  .recommendations {
+    .container {
+      padding: 0 20px;
+    }
+  }
+
+  .recommendations__image {
+    max-width: 530px;
+  }
+
+  .recommendations__info {
+    max-width: 580px;
+    padding: 0;
+    margin-left: 24px;
+  }
+}
+
+@media only screen and(max-width: 1150px) {
+  .recommendations__image {
+    max-width: 500px;
+  }
+}
+
+@media only screen and(max-width: 1120px) {
+  .recommendations__info {
+    margin-left: 16px;
+  }
+
+  .recommendations__heading {
+    font-size: 42px;
+    line-height: 50px;
+  }
+}
+
+@media only screen and(max-width: 1065px) {
+  .recommendations__image {
+    max-width: 450px;
+  }
+
+  .recommendations__heading {
+    margin-bottom: 32px;
+    font-size: 42px;
+    line-height: 50px;
+
+    &::after {
+      margin-top: 12px;
+    }
+  }
+
+  .recommendations__description {
+    margin-bottom: 32px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+@media only screen and(max-width: 1055px) {
+  .recommendations__heading {
+    margin-bottom: 16px;
+  }
+}
+
+@media only screen and(max-width: 1000px) {
+  .recommendations__image {
+    max-width: 400px;
+  }
+}
+
+@media only screen and(max-width: 952px) {
+  .recommendations__heading {
+    font-size: 38px;
+    line-height: 42px;
+  }
+
+  .recommendations__description {
+    margin-bottom: 24px;
+    font-size: 16px;
+    line-height: 18px;
+  }
+}
+
+@media only screen and(max-width: 905px) {
+  .recommendations {
+    position: relative;
+    padding: 80px 0;
+    background-image: url("../../Assets/Images/Recommendations.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      background-color: $lightBlue;
+      opacity: 0.5;
+    }
+  }
+
+  .recommendations__image {
+    display: none;
+  }
+
+  .recommendations__info {
+    margin: 0;
+    z-index: 1;
+  }
+
+  .recommendations__heading {
+    text-align: center;
+
+    &::after {
+      margin: 0 auto;
+      margin-top: 12px;
+    }
+  }
+
+  .recommendations__description {
+    text-align: center;
+  }
+
+  .recommendations__button {
+    margin: 0 auto;
+  }
+}
+
+@media only screen and(max-width: 860px) {
+  .recommendations__heading {
+    margin-bottom: 12px;
+    font-size: 32px;
+    line-height: 36px;
+
+    &::after {
+      margin-top: 6px;
+    }
+  }
+
+  .recommendations__description {
+    margin-bottom: 12px;
+  }
+}
+
+@media only screen and(max-width: 425px) {
+  .recommendations {
+    .container {
+      padding: 0 15px;
+    }
+  }
+
+  .recommendations__heading {
+    margin-bottom: 12px;
+    font-size: 28px;
+    line-height: 32px;
+  }
+
+  .recommendations__description {
+    max-width: 350px;
+    margin-bottom: 12px;
+    font-size: 14px;
+    line-height: 15px;
+  }
+}
+
+@media only screen and(max-width: 375px) {
+  .recommendations {
+    .container {
+      padding: 0 10px;
+    }
+  }
+}
+
+@media only screen and(max-width: 360px) {
+  .recommendations__heading {
+    font-size: 26px;
+  }
+}

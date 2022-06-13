@@ -1,0 +1,53 @@
+@import "../../Scss/Variables.scss";
+
+.header__top {
+  padding: 8px 0;
+  background-color: $green;
+}
+
+.header__top__text {
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  line-height: 27px;
+  color: $darkBlue;
+}
+
+.header__bottom {
+  padding-top: 24px;
+  padding-bottom: 25px;
+  background-color: $darkBlue;
+}
+
+@media only screen and(max-width: 768px) {
+  .header__top__text {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .header__bottom {
+    padding: 10px 0;
+  }
+}
+
+
+@media only screen and(max-width: 475px) {
+  .header__top__text{
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+
+@media only screen and(max-width: 425px) {
+  .header__top__text{
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+
+@media only screen and(max-width: 375px) {
+  .header__top__text{
+    font-size: 10px;
+    line-height: 14px;
+  }
+}
